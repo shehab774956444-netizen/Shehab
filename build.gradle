@@ -1,21 +1,18 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.shehab.store'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId 'com.shehab.store'
-        minSdk 23
-        targetSdk 34
-        versionCode 1
-        versionName '1.0'
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'androidx.webkit:webkit:1.12.1'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
 }
+
+rootProject.name = "Shehab"
+include(":app")
